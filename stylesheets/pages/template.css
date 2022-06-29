@@ -83,6 +83,19 @@ header {
   padding: 5px 0px 5px 20px;
 }
 
+.navigation__list i {
+  margin-right: 4px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+}
+
+.theme svg {
+  margin-left: 4px;
+}
+
 .depth_2 {
   position: absolute;
   left: 180px;
