@@ -44,78 +44,80 @@
     <nav class="navigation">
       <!-- 내비게이션 영역 -->
       <!-- 내비게이션 제목 -->
-      <h2>상품 종류</h2>
+      <h2>카테고리 상품</h2>
       <div class="navigation__inner">
         <!-- 카테고리별 내비게이션(메뉴) 영역 -->
-        <ul class="navigation__list">
-          <ul class="depth_1">
-            <a href="#" role="button">
-              <li class="blue_1">
-                <i class="icon-clothes"></i>
-                <span>패션의류/잡화</span>
-                <svg
-                  width="7"
-                  height="10"
-                  viewBox="0 0 7 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.5 0.5L0.5 9.5L6.5 4.80435L0.5 0.5Z"
-                    fill="#0074E9"
-                  />
-                </svg>
-              </li>
+        <ul class="navigation__list depth1">
+          <li class="depth1__product">
+            <a href="/" class="depth1__link" role="button">
+              <i class="icon-clothes"></i>
+              패션의류/잡화
             </a>
 
-            <ul class="depth_2">
-              <a href="#" role="button">
-                <li class="blue_2">
-                  <span>여성패션</span>
-                  <svg
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.5 0.5L0.5 9.5L6.5 4.80435L0.5 0.5Z"
-                      fill="#0074E9"
-                    />
-                  </svg>
-                </li>
-              </a>
+            <ul class="depth2">
+              <li class="depth2__product">
+                <a href="/" role="button" class="depth2__link">여성패션</a>
 
-              <ul class="depth_3">
-                <a href="/'">
-                  <li><span>의류</span></li>
-                </a>
-                <a href="/">
-                  <li><span>속옷/잠옷</span></li>
-                </a>
-                <a href="/">
-                  <li><span>신발</span></li>
-                </a>
-              </ul>
-              <li><span>남성패션</span></li>
-              <li><span>유아동패션</span></li>
+                <ul class="depth3">
+                  <li>
+                    <a href="/" class="depth3__link">의류</a>
+                  </li>
+                  <li>
+                    <a href="/">속옷/잠옷</a>
+                  </li>
+                  <li>
+                    <a href="/">신발</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="/">남성패션</a></li>
+              <li><a href="/">유아동패션</a></li>
             </ul>
-            <li><i class="icon-beauty"></i><span>뷰티</span></li>
-            <li><i class="icon-baby"></i><span>출산유아동</span></li>
-            <li><i class="icon-foods"></i><span>식품</span></li>
-            <li><i class="icon-kitchenware"></i><span>주방용품</span></li>
-            <li><i class="icon-houseware"></i><span>생활용품</span></li>
-            <li><i class="icon-interior"></i><span>홈인테리어</span></li>
-            <li><i class="icon-appliances"></i><span>가전디지털</span></li>
-            <li><i class="icon-sports"></i><span>스포츠</span></li>
-            <li><i class="icon-car"></i><span>자동차용품</span></li>
-            <li><i class="icon-book"></i><span>도서음반</span></li>
-            <li><i class="icon-toy"></i><span>완구취미</span></li>
-            <li><i class="icon-stationery"></i><span>문구오피스</span></li>
-            <li><i class="icon-pet"></i><span>반려동물</span></li>
-            <li><i class="icon-travel"></i><span>여행티켓</span></li>
-            <li class="theme">
+          </li>
+          <li>
+            <a href="/"><i class="icon-beauty"></i>뷰티</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-baby"></i>출산유아동</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-foods"></i>식품</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-kitchenware"></i>주방용품</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-houseware"></i>생활용품</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-interior"></i>홈인테리어</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-appliances"></i>가전디지털</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-sports"></i>스포츠</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-car"></i>자동차용품</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-book"></i>도서음반</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-toy"></i>완구취미</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-stationery"></i>문구오피스</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-pet"></i>반려동물</a>
+          </li>
+          <li>
+            <a href="/"><i class="icon-travel"></i>여행티켓</a>
+          </li>
+          <li class="theme">
+            <a href="/">
               <i class="icon-theme"></i><span>테마관</span
               ><svg
                 width="12"
@@ -131,10 +133,9 @@
                 <path
                   d="M8.532 8.85556H6.996L4.508 4.53555H4.476C4.48667 4.80755 4.49734 5.07955 4.508 5.35155C4.524 5.62355 4.53734 5.89555 4.548 6.16755V8.85556H3.468V3.14355H4.996L7.476 7.42355H7.5C7.49467 7.15689 7.48667 6.89289 7.476 6.63156C7.46534 6.37022 7.45467 6.10889 7.444 5.84755V3.14355H8.532V8.85556Z"
                   fill="white"
-                />
-              </svg>
-            </li>
-          </ul>
+                /></svg
+            ></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -198,7 +199,7 @@
             <div class="address">서울시 송파구 송파대로 570</div>
             <div class="email">
               <a href="mailto:help@coupang.com?subject=문의사항">
-                email:help@coupang.com
+                email : help@coupang.com
               </a>
             </div>
           </div>
@@ -238,35 +239,33 @@
         </div>
 
         <div class="sns">
-          <a href="/">
-            <div class="facebook">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/assets/icon/sns-facebook.svg" alt="페이스북로고" />
-              </a>
-            </div>
-            <div class="naver">
-              <a
-                href="https://section.blog.naver.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/assets/icon/sns-naver-blog.svg" alt="네이버로고" />
-              </a>
-            </div>
-            <div class="instagram">
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/assets/icon/sns-instagram.svg" alt="인스타로고" />
-              </a>
-            </div>
-          </a>
+          <div class="facebook">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/icon/sns-facebook.svg" alt="페이스북로고" />
+            </a>
+          </div>
+          <div class="naver">
+            <a
+              href="https://section.blog.naver.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/icon/sns-naver-blog.svg" alt="네이버로고" />
+            </a>
+          </div>
+          <div class="instagram">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/icon/sns-instagram.svg" alt="인스타로고" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
