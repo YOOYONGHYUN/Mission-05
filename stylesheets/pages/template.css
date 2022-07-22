@@ -67,7 +67,6 @@ header {
 .navigation__list {
   font-weight: 400;
   font-size: 12px;
-  position: relative;
   margin: 0px;
   width: 180px;
   height: 500px;
@@ -99,42 +98,46 @@ header {
 }
 
 .depth1 {
-  position: absolute;
+  position: relative;
   box-shadow: 0px 5px 4px 0px var(--color-gray-500);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .depth2 {
+  width: 180px;
   height: 500px;
   position: absolute;
   left: 180px;
   top: 0px;
-  box-shadow: 0px 5px 4px 0px var(--color-gray-500);
-  z-index: 2;
+  box-shadow: 1px 5px 4px 0px var(--color-gray-500);
+  /* z-index: 2; */
+  background-color: var(--color-white);
 }
+
 .depth3 {
   height: 500px;
   position: absolute;
   top: 0px;
   left: 180px;
-  box-shadow: 0px 5px 4px 0px var(--color-gray-500);
-  z-index: 3;
+  box-shadow: 1px 5px 4px 0px var(--color-gray-500);
+  background-color: var(--color-white);
+  /* z-index: 1; */
 }
 
-.dept2::before {
+.depth2::before {
   position: absolute;
   top: 0px;
-  left: 180px;
+  left: 0px;
   content: "";
   width: 1px;
   height: 500px;
   background-color: var(--color-gray-200);
 }
 
-.depth2::after {
+.depth3::before {
   position: absolute;
   top: 0px;
-  left: 180px;
+  left: 0px;
   content: "";
   width: 1px;
   height: 500px;
@@ -329,14 +332,8 @@ header {
   border-radius: 50%;
 }
 
-.navigation {
-  visibility: hidden;
-}
-
-.depth3 {
-  visibility: hidden;
-}
-
+.navigation,
+.depth3,
 .depth2 {
   visibility: hidden;
 }
@@ -353,28 +350,6 @@ header {
   visibility: visible;
 }
 
-/* .depth1__link:hover {
-  font-weight: 700;
-  color: var(--color-blue-600);
-  display: block;
-  width: 180px;
-  background-image: url("/assets/icon/more-right-active.svg");
-  background-repeat: no-repeat;
-  background-size: 11px 7px;
-  background-position: 130px 4px;
-}
-
-.depth2__link:hover {
-  font-weight: 700;
-  color: var(--color-blue-600);
-  display: block;
-  width: 180px;
-  background-image: url("/assets/icon/more-right-active.svg");
-  background-repeat: no-repeat;
-  background-size: 11px 7px;
-  background-position: 130px 4px;
-}*/
-
 .depth3__link:hover {
   font-weight: 700;
   color: var(--color-blue-600);
@@ -388,7 +363,7 @@ header {
 .depth1__link,
 .depth2__link {
   display: block;
-  width: 170px;
+  width: 150px;
 }
 
 .navigation__list a.is--active {
